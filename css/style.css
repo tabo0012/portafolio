@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* customizing my bootstrap color scheme */
+:root {
+  --bs-emphasis-color: #c8fee3;
+  --bs-emphasis-color-rgb: 200, 254, 227;
+  --bs-body-bg: #fff;
+  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-secondary: #000000;
+  --bs-secondary-rgb: 0, 0, 0;
+  --bs-border-width: 0;
+  --bs-border-radius: 0;
+  --bs-heading-color: var(--bs-emphasis-color);
+  --bs-white: #fff;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-primary-text-emphasis: #c8fee3;
+  --bs-dark-bg-subtle: #dcd5c1;
+}
+
+/* setting the menu width */
+.offcanvas,
+.offcanvas-lg,
+.offcanvas-md,
+.offcanvas-sm,
+.offcanvas-xl,
+.offcanvas-xxl {
+  --bs-offcanvas-width: 300px;
+}
+
+.offcanvas {
+  max-width: 100%;
+}
+
+/* styling my profile picture on my about page */
+.profile-pic {
+  max-width: 200px;
+}
+
+.full-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service .content {
+  padding: 6rem 2rem;
+}
+
+/* styling my input */
+input {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--bs-secondary);
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  color: #212529;
+  background-color: #fff;
+}
+
+/* styling bootstrap rows */
+.row {
+  margin: 0;
+}
+
+/* skip links */
+
+.skip-links {
+  list-style: none;
+}
+
+.skip-links a {
+  position: fixed;
+  top: -1000px;
+  left: 0;
+  z-index: 100;
+  color: red;
+}
+
+.skip-links a:focus {
+  top: 0;
+}
+
+/* media queries */
+@media (min-width: 768px) {
+  .full-image {
+    aspect-ratio: 3/4;
+  }
+
+  textarea {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  .full-image {
+    aspect-ratio: 16/9;
+  }
+}

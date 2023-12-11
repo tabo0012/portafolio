@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>David Alejandro Castro</title>
+  </head>
+  <body itemscope itemtype="https://schema.org/Person">
+    <header>
+      <ul class="skip-links">
+        <li>
+          <a href="#main-content" aria-label="skip to main content"
+            >Skip to main content</a
+          >
+        </li>
+      </ul>
+      <!-- navbar start -->
+      <nav class="navbar navbar-expand-lg bg-secondary pb-1 pb-lg-0">
+        <div class="container-fluid justify-content-lg-between">
+          <!-- navbar toggle -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarOffcanvasLg"
+            aria-controls="navbarOffcanvasLg"
+            aria-label="Toggle navigation"
+          >
+            <!-- navbar toggle icon -->
+            <span>
+              <img
+                src="images/toggle.svg"
+                width="20"
+                height="20"
+                alt="Navbar Toggle"
+              />
+            </span>
+          </button>
+          <p class="fs-6 text-primary-emphasis mb-0 d-lg-none">
+            David Alejandro Castro
+          </p>
+          <a
+            class="navbar-brand order-lg-2 flex-lg-grow-1"
+            href="index.html"
+            aria-label="Go to Home Page"
+          >
+            <img
+              src="images/logo.svg"
+              alt="David Alejandro Castro Logo"
+              width="35"
+              height="35"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <div
+            class="offcanvas bg-secondary offcanvas-end flex-lg-grow-1"
+            tabindex="-1"
+            id="navbarOffcanvasLg"
+            aria-labelledby="navbarOffcanvasLgLabel"
+          >
+            <!-- off canvas nav header content -->
+            <div class="offcanvas-header d-lg-none d-flex justify-content-end">
+              <button
+                type="button"
+                class="bg-transparent border-0"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <!-- navbar close icon -->
+                <span>
+                  <img
+                    src="images/close.svg"
+                    width="20"
+                    height="20"
+                    alt="Navbar Close"
+                  />
+                </span>
+              </button>
+            </div>
+            <!-- off canvas nav body content -->
+            <div class="offcanvas-body">
+              <!-- navigation menu links -->
+              <ul
+                class="navbar-nav justify-content-end justify-content-lg-start flex-grow-1 pe-3 pe-lg-0"
+              >
+                <li class="nav-item px-2 px-lg-0">
+                  <a
+                    class="nav-link fs-6 text-white text-uppercase active"
+                    aria-current="page"
+                    href="index.html"
+                    >home</a
+                  >
+                </li>
+                <li class="nav-item px-2 px-lg-0">
+                  <a
+                    class="nav-link fs-6 text-white text-uppercase"
+                    href="about.html"
+                    >about</a
+                  >
+                </li>
+                <li class="nav-item px-2 px-lg-0">
+                  <a
+                    class="nav-link fs-6 text-white text-uppercase"
+                    href="services.html"
+                    >service</a
+                  >
+                </li>
+                <li class="nav-item px-2 px-lg-0">
+                  <a
+                    class="nav-link fs-6 text-white text-uppercase"
+                    href="contact.html"
+                    >contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- my social media links -->
+          <ul
+            class="social d-none d-lg-flex order-3 align-items-center justify-content-end mb-0 gap-2 list-unstyled flex-lg-grow-1"
+          >
+            <li>
+              <a href="https://www.instagram.com" target="_blank">
+                <img
+                  width="20px"
+                  height="20px"
+                  src="images/instagram.svg"
+                  alt="My Instagram"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com" target="_blank">
+                <img
+                  width="20px"
+                  height="20px"
+                  src="images/facebook.svg"
+                  alt="My Facebook"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- navbar end -->
+    </header>
+    <main id="page-top" data-aos="fade-up">
+      <!-- image slider -->
+      <section>
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <picture>
+                <source
+                  srcset="images/slider-image-720_x_280.png"
+                  media="(max-width: 720px)"
+                />
+                <source
+                  srcset="images/slider-image-1920_x_749.png"
+                  media="(min-width: 721px)"
+                />
+                <img
+                  src="images/slider-image-720_x_280.png"
+                  class="d-block w-100"
+                  alt="Photos ive taken"
+                />
+              </picture>
+            </div>
+            <div class="carousel-item">
+              <picture>
+                <source
+                  srcset="images/slider-image-720_x_280.png"
+                  media="(max-width: 720px)"
+                />
+                <source
+                  srcset="images/slider-image-1920_x_749.png"
+                  media="(min-width: 721px)"
+                />
+                <img
+                  src="images/slider-image-720_x_280.png"
+                  class="d-block w-100"
+                  alt="Photos ive taken"
+                />
+              </picture>
+            </div>
+            <div class="carousel-item">
+              <picture>
+                <source
+                  srcset="images/slider-image-720_x_280.png"
+                  media="(max-width: 720px)"
+                />
+                <source
+                  srcset="images/slider-image-1920_x_749.png"
+                  media="(min-width: 721px)"
+                />
+                <img
+                  src="images/slider-image-720_x_280.png"
+                  class="d-block w-100"
+                  alt="Photos ive taken"
+                />
+              </picture>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- about me section -->
+      <section id="main-content" class="about-me container-fluid pt-5">
+        <article class="row">
+          <header
+            class="row col-12 col-md-4 text-black d-flex justify-content-md-center"
+          >
+            <picture class="profile-pic col-3 col-md-12">
+              <source
+                srcset="images/me-720_x_720.png"
+                media="(max-width: 720px)"
+              />
+              <source
+                srcset="images/me-1920_x_1920.png"
+                media="(min-width: 721px)"
+              />
+              <img
+                src="images/me-720_x_720.png"
+                class="w-100 mb-2 mb-md-0"
+                alt="David Alejandro Taborda Castro"
+              />
+            </picture>
+            <h1
+              class="text-black fs-3 mb-md-0 text-md-center"
+              itemprop="givenName"
+            >
+              David Alejandro Taborda Castro
+            </h1>
+            <p class="text-md-center" itemprop="jobTitle">Photographer</p>
+          </header>
+          <div class="content col-12 col-md-8 mt-5 mt-md-0">
+            <h2 class="text-black fs-3 fw-normal mb-3">Something about me</h2>
+            <!-- info about me -->
+            <p class="mb-2">
+              David Alejandro Taborda Castro, a 30-year-old Colombian
+              journalist, possesses an enduring passion for photography that was
+              nurtured during his university years. In his role as a committed
+              storyteller, he embarked on a professional journey within the
+              media landscape, eventually discovering his niche in the
+              enthralling world of photojournalism. Guided by his unwavering
+              dedication to skill refinement, David pursued an extensive
+              photography course that not only broadened his perspective but
+              also heightened his capacity to capture the fleeting essence of
+              life's moments.David's trajectory led him to diverse platforms,
+              where he notably excelled during his tenure at a prominent
+              Colombian TV news organization.
+            </p>
+            <p>
+              With a camera as his instrument and a journalist's inquisitiveness
+              as his driving impetus, he has relentlessly striven to unveil the
+              concealed narratives that mold our world. With each snap of the
+              shutter, David endeavors to encapsulate more than just visuals—his
+              aim is to encapsulate emotions, truths, and the profound core of
+              the human experience. His unwavering dedication to journalism
+              coupled with his deep affection for photography fuels his
+              aspiration to continually illuminate multifaceted narratives.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+    <!-- footer start -->
+    <footer data-aos="fade-in" class="bg-dark-subtle py-5 py-md-4 px-1 mt-5">
+      <!-- content container -->
+      <div class="row align-items-lg-center">
+        <div class="col social">
+          <!-- social media links -->
+          <ul
+            class="d-flex flex-row flex-lg-column align-items-center gap-2 list-unstyled"
+          >
+            <li>
+              <a
+                href="https://www.instagram.com"
+                aria-label="go to my instagram"
+                target="_blank"
+              >
+                <img
+                  width="30px"
+                  height="30px"
+                  src="images/instagram-dark.svg"
+                  alt="My Instagram"
+                />
+                <span class="d-none d-lg-inline-block text-black">
+                  instagram
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com"
+                aria-label="go to my facebook"
+                target="_blank"
+              >
+                <img
+                  width="30px"
+                  height="30px"
+                  src="images/facebook-dark.svg"
+                  alt="My Facebook"
+                />
+                <span class="d-none d-lg-inline-block text-black">
+                  facebook
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- email form -->
+        <form
+          action="
+        "
+          class="d-none d-md-flex gap-3 col-6"
+        >
+          <input type="email" placeholder="Email Address" />
+          <button type="submit" class="bg-transparent">OK</button>
+        </form>
+        <div class="d-flex flex-column col">
+          <!-- phone number -->
+          <a
+            href="phone:+44 345 678 903"
+            itemprop="telephone"
+            aria-label="call my phone"
+            >+44 345 678 903
+          </a>
+          <!-- email -->
+          <a
+            href="mailto:davidalejandrocastro.93@gmail.com"
+            aria-label="write me an email"
+            itemprop="email"
+            >davidalejandrocastro.93@gmail.com</a
+          >
+        </div>
+      </div>
+       <br />
+      <a href="#top" aria-label="go to top of page">back to top</a>
+    </footer>
+    <!-- footer end -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
